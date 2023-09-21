@@ -1,3 +1,21 @@
 img {
-    width:256px;
+    width:30%;
+    align-content: center;
 }
+
+main, header {
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+nav ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+nav ul li{
+    display:inline-block;
+    width: 20%;
+}
+
