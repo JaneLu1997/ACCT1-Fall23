@@ -72,11 +72,7 @@ body {
 
 @media (min-width: 1000px) {
 
-    .red-text{
+    .red-text, .grn-text{
         color:rgb(20, 36, 255);
-    }
-    
-    .grn-text{
-        color:rgb(20, 12, 241);
     }
 }
