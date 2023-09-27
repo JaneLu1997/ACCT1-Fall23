@@ -1,6 +1,129 @@
-main {
-    width: 70%;
+body {
+    background-color: white;
+    transition: background-color 0.5s ease;
+}
+
+main header{
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
 }
 
+p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: color 0.5s ease;
+}
+
+nav {
+    width: 70%;
+    margin-left: auto;
+    margin-right:auto;
+}
+nav ul{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+}
+
+nav ul li{
+    display:inline-block;
+    padding: 10px;
+    border-bottom: 1px dashed rgb(246, 245, 243);
+}
+
+a {
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgb(255, 0, 123);
+}
+
+h1 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
+    line-height: .8;
+    color:  rgb(255, 0, 123);
+    transition: color 0.5s ease;
+
+}
+
+img {
+    width: 100%;
+    height:auto;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 50px;
+    height: auto;
+}
+
+.paragraph_one{
+}
+
+
+
+@media (min-width: 998px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav ul li {
+        border: none;
+        padding: 0;
+    }
+
+}
+
+
+
+@media (max-width: 1216px) {
+    .column {
+        width: 40%;
+        margin-left: auto;
+        margin-right:auto;
+    }
+
+    h1 {
+        font-size: 50px;
+        color: black;
+    }
+
+    body {
+        background-color: lightgray; /* Change the color for smaller screens */
+    }
+
+}
+
+
+
+@media (max-width: 998px) {
+    .column {
+        width: 80%;
+        margin-left: auto;
+        margin-right:auto;
+    }
+
+    h1 {
+        font-size: 45px;
+        color: white;
+        
+    }
+
+    body {
+        background-color: black; /* Change the color for even smaller screens */
+    }
+
+    p {
+        color: white;
+    }
+
+}
