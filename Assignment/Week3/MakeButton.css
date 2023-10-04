@@ -1,0 +1,14 @@
+
+.btnimg-size img{
+    width: 100px;
+    height: 100px;
+}
+
+button{
+    padding:5px;
+    border: none;
+}
+
+header{
+    padding: 50px;
+}

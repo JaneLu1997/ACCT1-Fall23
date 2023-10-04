@@ -21,7 +21,6 @@ let generateColor = function(){
 
 let changeImage = function(){
     firstImage.classList.toggle("image-2")
-    console.log(firstImage.classList[0])
     if(firstImage.classList[0] == "image-2"){
         firstImage.src = "loopy_2.png"
     }
