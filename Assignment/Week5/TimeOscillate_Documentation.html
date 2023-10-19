@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Documentation.css" rel="stylesheet">
+    <title>Documentation: Time & Oscillate Progress</title>
+</head>
+<body>
+    <header>
+        <h1>Documentation: <br>Time & Oscillate Progress</h1>
+    </header>
+    <main>
+        <div class="row">
+            <p>To think about the assignment, I took inspiration from the rotating and shifting fan.</p>
+            <img src="Inspiration1.jpeg" alt="inspiration">
+            <img src="Inspiration2.jpeg" alt="inspiration">
+        </div>
+
+        <div class="row">
+            <img src="draft.png" alt="hand draft">
+            <p>Starting from thinking about line and rotation, I initially ideated the movement and math as shown in my hand draft:</p>
+        </div>
+
+        <div class="row">
+            <img src="Draft_1.png" alt="1st Draft">
+            <p>Based on our very initial math, I have 9 rotating lines lined up. We have the ideal movement, however the fan wasn't being drawn</p>
+        </div>
+
+        <div class="row">
+            <img src="Draft_2.png" alt="2nd Draft">
+            <p>After doing some research, I understand that to keep the movement and have the lines leaving tracks behind, we'd have to introduce lineSegment. And here's a reference fanning code I pulled from the internet. I was mainly thinking about how to inter exchange the variable i with my initial value of i. </p>
+        </div>
+
+        <div class="row">
+            <img src="Draft_3.png" alt="3rd Draft">
+            <p>Combining my code with the reference code's variable, I got some result. However it is not what I want. I realized I should define my "i" value differently from what I originally thought.</p>
+        </div>
+
+        <div class="row">
+            <img src="Draft_4.png" alt="4th Draft">
+            <p>Going back to the reference code I pulled, I modified it to keep the original movement, and change fanRadius and line length to what I desire. I duplicated the code to constantly translate the starting point and drew each circles seperately, adjusting speed and position each on their own</p>
+        </div>
+
+        <h1>OUTCOME</h1>
+        <iframe src="https://openprocessing.org/sketch/2051071/embed/" width="1350" height="900"></iframe>
+
+        <h1>My Question:</h1>
+        <div class="statement">How could I simplify the code, instead of drawing 9 circles manually?</div>
+    </main>
+</body>
+</html>
