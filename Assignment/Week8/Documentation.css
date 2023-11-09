@@ -21,6 +21,14 @@ p{
     font-family: 'DM Sans', sans-serif;
 }
 
+li {
+    width: 50%;
+    margin-left:auto;
+    margin-right:auto;
+    line-height: 1.5;
+    font-family: 'DM Sans', sans-serif;
+}
+
 .statement{
     text-align: center;
     font-family: 'Playfair Display', serif;
