@@ -7,11 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Playfair+Display&display=swap" rel="stylesheet">
-    <title>Documentation of Dice Interface</title>
+    <title>Documentation: Digital Countdown</title>
 </head>
 <body>
     <header>
-        <h1>Documentation: <br> Dice Interface</h1>
+        <h1>Documentation: <br> Digital Countdown</h1>
     </header>
     <main>
         <div class="row">
@@ -25,11 +25,25 @@
             <p>
                 First, we need to flip the video also try to match drawn points to the image.
             </p>
-            <img src="VideoFlipped.png">
+            <img src="imageFixed.png">
+        </div>
+
+        <div class="row">
+            <p>
+                Second, we need to figure out if we can recognize gestures. After brief research, this is often achieved by TensorFlow. The premeter of this assignment is p5.js and ml5.js. However, this should be maneuvered by training the machine to know specific hand gestures based on the position of the points. As we can see, there's always 21 points registered for one hand.
+            </p>
+            <img src="pointLog.png">
+        </div>
+
+        <div class="row">
+            <p>
+                After this, to moniter what points we need exact locations in order to maneuver, we changed keypoints color in our code, and eventually we found out the keypoint data for the three fingers that we want to monitor: index fingertip (keypoint 9), middle fingertip (keypoint 13) and ring fingertip (keypoint 17)
+            </p>
+            <img src="keypointLocation.png">
         </div>
         <div class="row">
             <p>
-                Second, we need to add another hand also as the point tracker. After some research, I'm looking into MediaPipe on how it is done with both hands.
+                Additionally, we want to add another hand also as the point tracker. After some research, I'm looking into MediaPipe on how it is done with both hands.
             </p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/BX8ibqq0MJU?si=LOeKAuPEZ6uhbqqT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
