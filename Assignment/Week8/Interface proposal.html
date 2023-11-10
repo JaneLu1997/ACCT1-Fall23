@@ -30,31 +30,20 @@
 
         <div class="row">
             <p>
-                Second, we need to figure out if we can recognize gestures. After brief research, this is often achieved by TensorFlow. The premeter of this assignment is p5.js and ml5.js. However, this should be maneuvered by training the machine to know specific hand gestures based on the position of the points. As we can see, there's always 21 points registered for one hand.
+                Second, we need to figure out if we can recognize gestures. After brief research, this is often achieved by TensorFlow. The premeter of this assignment is p5.js and ml5.js. However, this should be maneuvered by training the machine to know specific hand gestures based on the position of the points. As we can see, there's always 21 points registered for one hand. We can also check out each finger's data through annotation -> finger, marked in second picture.
             </p>
             <img src="pointLog.png">
+            <img src="AnnotationLog.png">
         </div>
 
         <div class="row">
             <p>
-                After this, to moniter what points we need exact locations in order to maneuver, we changed keypoints color in our code, and eventually we found out the keypoint data for the three fingers that we want to monitor: index fingertip (keypoint 9), middle fingertip (keypoint 13) and ring fingertip (keypoint 17)
+                Now, as we've found out the data we want the machine to learn and modify, I went ahead and followed this video tutorial instructions: 
             </p>
-            <img src="keypointLocation.png">
-        </div>
-        <div class="row">
-            <p>
-                Additionally, we want to add another hand also as the point tracker. After some research, I'm looking into MediaPipe on how it is done with both hands.
-            </p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/BX8ibqq0MJU?si=LOeKAuPEZ6uhbqqT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="750" height="500" src="https://www.youtube.com/embed/A2yFBDBq9UY?si=zJX5khbttd1pqIjZ&amp;start=1880" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <h1>Steps & Challenges</h1>
-        <ul>
-            <li>1. We need to have both hands tracked and shown on the video</li>
-            <li>2. On top of that, we need to train the machine to recognize certain hand poses of number, six in total.</li>
-            <li>3. We need to somehow train the machine to draw co-related images that's related to specific hand pose. How cand we do this? Is it doable?</li>
-            <li>4. If we can achieve that, could it also work with both hands to draw a dice combo?</li>
-        </ul>
 
         <h1>PROGRESS</h1>
         <iframe src="https://editor.p5js.org/jadedpineapple/full/0vkR1_qmw" width="1350" height="900"></iframe>
