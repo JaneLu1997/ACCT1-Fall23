@@ -16,7 +16,7 @@
     <main>
         <div class="row">
             <p>
-                For this project, I'm using a joystick to ammulate the singing bowl sound. The softwware we will be using is Arduino IDE and Processing.
+                For this project, I'm using a joystick to ammulate the singing bowl sound. The softwware we will be using is Arduino IDE and Processing. For code details, you can visit my  <a href="https://github.com/JaneLu1997/ACCT1-Fall23/tree/main/Assignment/Week13">GitHub site:</a>
             </p>
         </div>
 
@@ -25,6 +25,7 @@
               First thing first, I researched on how to connect the Hiletgo joystick to Huzzah 32 ESP32 feather. It looks like this:   
             </p>
             <img src="boardConnection.png">
+            <img src="doc1.pngs">
         </div>
 
         <div class="row">
@@ -42,21 +43,13 @@
 
         <div class="row">
             <p>
-                Now we have three mainly involved finger tips tracked and replaced. However all the images stay still and don't alter their angle based on the finger pointing direction. That's the next step but here's how it looks like so far: 
+                Now, to connect the Arduino IDE to Processing, I set up the code in processing refering to our week 13 in class session. However, the sound generating isn't connected to the joystick. I try to use print line function to get the port data, it doesn't seem to show up on Processing while it works on Arduino perfectly.
             </p>
-            <img src="ToyTracked.png">
-        </div>
-
-        <div class="row">
-            <p>
-                 To make the toys rotate based on finger direction, we find out the middle point of the finger tip and the first knuckles counting down using sub(). Then using heading() we assign the images with the rotation angle. It's a bit wanky but it's working!
-            </p>
-            <img src="RotatingToy.png">
+            <img src="doc2.png">
         </div>
 
 
         <h1>FINAL CODE</h1>
-        <iframe src="https://editor.p5js.org/jadedpineapple/full/8dXUsCv5i" width="1200" height="500"></iframe>
 
     </main>
 </body>
