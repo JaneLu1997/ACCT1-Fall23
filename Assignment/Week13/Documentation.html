@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="Documentation.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Documentation: Singing Bowl</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Documentation: <br> Singing Bowl</h1>
+    </header>
+    <main>
+        <div class="row">
+            <p>
+                For this project, I'm using a joystick to ammulate the singing bowl sound. The softwware we will be using is Arduino IDE and Processing.
+            </p>
+        </div>
+
+        <div class="row">
+            <p>
+              First thing first, I researched on how to connect the Hiletgo joystick to Huzzah 32 ESP32 feather. It looks like this:   
+            </p>
+            <img src="boardConnection.png">
+        </div>
+
+        <div class="row">
+            <p>
+                
+            </p>
+        </div>
+
+        <div class="row">
+            <p>
+                Now, as we've found out the data we want the machine to learn and modify, I went ahead and followed this video tutorial instructions: 
+            </p>
+            <iframe width="750" height="500" src="https://www.youtube.com/embed/A2yFBDBq9UY?si=zJX5khbttd1pqIjZ&amp;start=1880" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class="row">
+            <p>
+                Now we have three mainly involved finger tips tracked and replaced. However all the images stay still and don't alter their angle based on the finger pointing direction. That's the next step but here's how it looks like so far: 
+            </p>
+            <img src="ToyTracked.png">
+        </div>
+
+        <div class="row">
+            <p>
+                 To make the toys rotate based on finger direction, we find out the middle point of the finger tip and the first knuckles counting down using sub(). Then using heading() we assign the images with the rotation angle. It's a bit wanky but it's working!
+            </p>
+            <img src="RotatingToy.png">
+        </div>
+
+
+        <h1>FINAL CODE</h1>
+        <iframe src="https://editor.p5js.org/jadedpineapple/full/8dXUsCv5i" width="1200" height="500"></iframe>
+
+    </main>
 </body>
 </html>
